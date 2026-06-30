@@ -99,12 +99,15 @@ public class Binding{
     screenshot = KeyBind.add("screenshot", KeyCode.f12),
     togglePowerLines = KeyBind.add("toggle_power_lines", KeyCode.f5),
     toggleBlockStatus = KeyBind.add("toggle_block_status", KeyCode.f6),
-    playerList = KeyBind.add("player_list", KeyCode.tab, "multiplayer"),
-    chat = KeyBind.add("chat", KeyCode.enter),
-    chatHistoryPrev = KeyBind.add("chat_history_prev", KeyCode.up),
-    chatHistoryNext = KeyBind.add("chat_history_next", KeyCode.down),
-    chatScroll = KeyBind.add("chat_scroll", new Axis(KeyCode.scroll)),
-    chatMode = KeyBind.add("chat_mode", KeyCode.tab),
+    
+    // MULTIPLAYER DISABLED - chat and player list removed
+    playerList = KeyBind.add("player_list", KeyCode.unset, "multiplayer"),
+    chat = KeyBind.add("chat", KeyCode.unset),
+    chatHistoryPrev = KeyBind.add("chat_history_prev", KeyCode.unset),
+    chatHistoryNext = KeyBind.add("chat_history_next", KeyCode.unset),
+    chatScroll = KeyBind.add("chat_scroll", new Axis(KeyCode.unset)),
+    chatMode = KeyBind.add("chat_mode", KeyCode.unset),
+    
     console = KeyBind.add("console", KeyCode.f8),
     debugHitboxes = KeyBind.add("debug_hitboxes", KeyCode.unset),
     performanceMetrics = KeyBind.add("performance_metrics", KeyCode.unset)
