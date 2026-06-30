@@ -1,0 +1,11 @@
+# Single-Player Only Version - Build Configuration
+# Remove all server-related dependencies
+
+# The following modules are NOT included in single-player builds:
+# - mindustry.net.ArcNetProvider (network provider)
+# - mindustry.core.NetServer (server implementation)
+# - mindustry.core.NetClient (client implementation)
+# - mindustry.ui.dialogs.HostDialog (server hosting)
+# - mindustry.ui.dialogs.JoinDialog (server joining)
+
+# All networking is stubbed out with no-op implementations
